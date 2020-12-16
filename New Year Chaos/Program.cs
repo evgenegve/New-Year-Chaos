@@ -25,7 +25,7 @@ namespace New_Year_Chaos
             }
             if (numBribes != -1)
                 Console.WriteLine(numBribes);
-            else Console.WriteLine("Too chaotic");
+            else Console.WriteLine("Too chaotic!");
         }
 
         static void Main(string[] args)
