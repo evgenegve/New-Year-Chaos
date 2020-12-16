@@ -20,14 +20,12 @@ namespace New_Year_Chaos
                     numBribes = -1;
                     break;
                 }
-
                 for (int j = Math.Max(0, q[i] - 2); j < i; j++)
                     if (q[j] > q[i]) numBribes++;
             }
             if (numBribes != -1)
                 Console.WriteLine(numBribes);
             else Console.WriteLine("Too chaotic");
-
         }
 
         static void Main(string[] args)
@@ -35,16 +33,12 @@ namespace New_Year_Chaos
             try
             {
                 int t = Convert.ToInt32(Console.ReadLine());
-
                 for (int tItr = 0; tItr < t; tItr++)
-                {
-                    
+                {                    
                     int[] q = Array.ConvertAll(Console.ReadLine().Split(' '), qTemp => Convert.ToInt32(qTemp));
-
                     minimumBribes(q);
                 }
             }
-
             catch (OverflowException)
             {
                 Console.WriteLine("The number cannot fit in an Int32.");
