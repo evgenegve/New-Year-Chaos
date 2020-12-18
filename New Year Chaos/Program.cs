@@ -10,7 +10,7 @@ namespace New_Year_Chaos
     {
 
         // Complete the minimumBribes function below.
-        static void minimumBribes(int[] q)
+        static void MinimumBribes(int[] q)
         {
             int numBribes = 0;
             for (int i = q.Length - 1; i >= 0; i--)
@@ -36,7 +36,7 @@ namespace New_Year_Chaos
                 for (int tItr = 0; tItr < t; tItr++)
                 {                    
                     int[] q = Array.ConvertAll(Console.ReadLine().Split(' '), qTemp => Convert.ToInt32(qTemp));
-                    minimumBribes(q);
+                    MinimumBribes(q);
                 }
             }
             catch (OverflowException)
